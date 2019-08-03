@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+void main() {
+int sayi1, sayi2, islem, topsonuc, cıksonuc, carpsonuc, bolsonuc;
+
+printf("ilk sayiyi giriniz(tam sayi)\n: ");
+scanf("%d", &sayi1);
+
+printf("ikinci sayiyi giriniz(tam sayı)\n: ");
+scanf("%d", &sayi2);
+
+printf("islem seciniz(1=toplama,2=cikarma,3=carpma,4=bolme)\n:");
+scanf("%d", &islem);
+
+if (islem == 1) {
+topsonuc = sayi1 + sayi2;
+printf("%d+%d = %d",sayi1,sayi2, topsonuc);
+}
+else if (islem == 2) {
+cıksonuc = sayi1 - sayi2;
+printf("%d-%d = %d", sayi1, sayi2, cıksonuc);
+}
+else if (islem == 3) {
+carpsonuc = sayi1*sayi2;
+printf("%d*%d = %d", sayi1, sayi2, carpsonuc);
+}
+else if (islem == 4) {
+bolsonuc = sayi1 / sayi2;
+printf("%d/%d = %d",sayi1,sayi2 ,bolsonuc);
+}
+
+else {
+printf("HATALI GIRIS LUTFEN 1-4 ARASI SAYI GIRINIZ");
+}
+
+
+}
